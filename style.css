@@ -13,6 +13,12 @@ body {
 
 .hero {
     background-color: #000;
+    background-image: url('./image/bg.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-clip: padding-box; */
+    background-size: 60%;
     width: 100%;
 }
 
@@ -58,14 +64,19 @@ nav ul li a:hover {
 }
 
 
-.btn {
+.btn, .mails {
     background-color: #f9004d;
     color: #ffffff;
     text-decoration: none;
     transition: transform .4s;
 }
 
-.btn:hover {
+ .btn:hover {
+    transform: scale(1.2);
+}
+
+
+.mails:hover {
     transform: scale(1.2);
 }
 
@@ -97,6 +108,11 @@ button:hover {
   
     .hero {
         width: 680px;
+        background-image: url('./image/bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
 
     header {
@@ -166,7 +182,7 @@ button:hover {
         outline: none;
     }
     
-    .mail form input:last-child {
+    .mail form .mails {
         display: inline-block;
         outline: none;
         position: absolute;
@@ -477,7 +493,7 @@ h4 {
     outline: none;
 }
 
-.mail form input:last-child {
+.mail form .mails {
     display: inline-block;
     outline: none;
     position: absolute;
